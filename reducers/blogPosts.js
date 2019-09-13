@@ -71,7 +71,9 @@ export function* fetchBlogPostsAsync() {
         res.json()
       )
     })
-    yield put(fetchBlogPostsSuccess(blogPosts))
+    console.log(blogPostsFetched)
+
+    yield put(fetchBlogPostsSuccess(blogPostsFetched))
   } catch (error) {
     yield put(fetchBlogPostsError(error))
   }

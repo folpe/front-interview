@@ -4,8 +4,10 @@ import { makeStyles } from '@material-ui/core/styles'
 import SearchIcon from '@material-ui/icons/Search'
 import { useDispatch } from 'react-redux'
 import { fetchBlogPosts } from '../reducers/blogPosts'
+import axios from 'axios'
 
 import InputBase from '@material-ui/core/InputBase'
+import { Card } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
   search: {
@@ -49,8 +51,16 @@ const Blog = () => {
 
   const [blogPosts, setBlogPosts] = useState([])
   useEffect(() => {
-    dispatch(fetchBlogPosts())
+    const fetchData = async () => {
+      const result = await axios(`https://upply-interview.herokuapp.com/`)
+      setBlogPosts(result.data)
+    }
+    fetchData()
   }, [])
+
+  console.log(blogPosts)
+
+  const blogPostsList = blogPosts.map(post => <Card>{post.title}</Card>)
 
   return (
     <Layout>
@@ -67,7 +77,7 @@ const Blog = () => {
           inputProps={{ 'aria-label': 'search' }}
         />
       </div>
-      Blog page
+      {blogPostsList}
     </Layout>
   )
 }
