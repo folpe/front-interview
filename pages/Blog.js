@@ -68,6 +68,7 @@ const Blog = () => {
   }
 
   const blogPostsList = blogPosts
+    .sort((a, b) => b.date > a.date)
     .filter(post => post.text.includes(searchValue))
     .map(post => (
       <Card key={post.id} className={classes.post}>
