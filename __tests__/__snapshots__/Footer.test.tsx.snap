@@ -2,26 +2,24 @@
 
 exports[`Enzyme tests should render Footer according to snapshot 1`] = `
 <Footer>
-  <styled.footer>
+  <Footer__Wrapper>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Footer__Wrapper-sc-1so89p3-0",
             "isStatic": true,
-            "lastClassName": "yyWgM",
+            "lastClassName": "giKWMg",
             "rules": Array [
-              "
-  margin-top: 3rem;
-",
+              "margin-top:3rem;",
             ],
           },
-          "displayName": "styled.footer",
+          "displayName": "Footer__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Footer__Wrapper-sc-1so89p3-0",
           "target": "footer",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -31,7 +29,7 @@ exports[`Enzyme tests should render Footer according to snapshot 1`] = `
       forwardedRef={null}
     >
       <footer
-        className="sc-bdVaJa yyWgM"
+        className="Footer__Wrapper-sc-1so89p3-0 giKWMg"
       >
         <p
           data-testid="copyright"
@@ -40,6 +38,6 @@ exports[`Enzyme tests should render Footer according to snapshot 1`] = `
         </p>
       </footer>
     </StyledComponent>
-  </styled.footer>
+  </Footer__Wrapper>
 </Footer>
 `;

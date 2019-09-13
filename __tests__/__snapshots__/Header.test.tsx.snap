@@ -2,26 +2,24 @@
 
 exports[`Enzyme tests should render Header according to snapshot 1`] = `
 <Header>
-  <styled.header>
+  <Header__Wrapper>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Header__Wrapper-sc-1hago8x-0",
             "isStatic": true,
-            "lastClassName": "hkUrUx",
+            "lastClassName": "cBQqfg",
             "rules": Array [
-              "
-  padding: 1rem 0 3rem;
-",
+              "padding:1rem 0 3rem;",
             ],
           },
-          "displayName": "styled.header",
+          "displayName": "Header__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Header__Wrapper-sc-1hago8x-0",
           "target": "header",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -31,9 +29,9 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
       forwardedRef={null}
     >
       <header
-        className="sc-bdVaJa hkUrUx"
+        className="Header__Wrapper-sc-1hago8x-0 cBQqfg"
       >
-        <styled.h1
+        <Header__Title
           data-testid="title"
         >
           <StyledComponent
@@ -43,21 +41,17 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bwzfXH",
+                  "componentId": "Header__Title-sc-1hago8x-1",
                   "isStatic": true,
-                  "lastClassName": "iWcudY",
+                  "lastClassName": "flkuHf",
                   "rules": Array [
-                    "
-  color: #000000;
-  font-size: 3rem;
-  text-decoration: none; 
-",
+                    "color:#000000;font-size:3rem;text-decoration:none;",
                   ],
                 },
-                "displayName": "styled.h1",
+                "displayName": "Header__Title",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bwzfXH",
+                "styledComponentId": "Header__Title-sc-1hago8x-1",
                 "target": "h1",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -67,36 +61,32 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
             forwardedRef={null}
           >
             <h1
-              className="sc-bwzfXH iWcudY"
+              className="Header__Title-sc-1hago8x-1 flkuHf"
               data-testid="title"
             >
               Coding test with Nextjs
             </h1>
           </StyledComponent>
-        </styled.h1>
+        </Header__Title>
         <nav>
-          <styled.ul>
+          <Header__NavList>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
+                    "componentId": "Header__NavList-sc-1hago8x-2",
                     "isStatic": true,
-                    "lastClassName": "isjFGc",
+                    "lastClassName": "esosuA",
                     "rules": Array [
-                      "
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-",
+                      "display:flex;list-style-type:none;margin:0;",
                     ],
                   },
-                  "displayName": "styled.ul",
+                  "displayName": "Header__NavList",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htpNat",
+                  "styledComponentId": "Header__NavList-sc-1hago8x-2",
                   "target": "ul",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -106,16 +96,15 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
               forwardedRef={null}
             >
               <ul
-                className="sc-htpNat isjFGc"
+                className="Header__NavList-sc-1hago8x-2 esosuA"
               >
                 <li
                   data-testid="navlink"
                 >
                   <Link
                     href="/"
-                    prefetch={true}
                   >
-                    <styled.a
+                    <Header__NavItem
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                     >
@@ -125,30 +114,17 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bxivhb",
+                              "componentId": "Header__NavItem-sc-1hago8x-3",
                               "isStatic": true,
-                              "lastClassName": "bTbHln",
+                              "lastClassName": "dHmREQ",
                               "rules": Array [
-                                "
-  color: #999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: #666;
-  }
-  &:active {
-    color: #333;
-  }
-",
+                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
                               ],
                             },
-                            "displayName": "styled.a",
+                            "displayName": "Header__NavItem",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bxivhb",
+                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
                             "target": "a",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -160,14 +136,14 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                         onMouseEnter={[Function]}
                       >
                         <a
-                          className="sc-bxivhb bTbHln"
+                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
                           onClick={[Function]}
                           onMouseEnter={[Function]}
                         >
                           Home
                         </a>
                       </StyledComponent>
-                    </styled.a>
+                    </Header__NavItem>
                   </Link>
                 </li>
                 <li
@@ -175,9 +151,8 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                 >
                   <Link
                     href="/about"
-                    prefetch={true}
                   >
-                    <styled.a
+                    <Header__NavItem
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                     >
@@ -187,30 +162,17 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bxivhb",
+                              "componentId": "Header__NavItem-sc-1hago8x-3",
                               "isStatic": true,
-                              "lastClassName": "bTbHln",
+                              "lastClassName": "dHmREQ",
                               "rules": Array [
-                                "
-  color: #999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: #666;
-  }
-  &:active {
-    color: #333;
-  }
-",
+                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
                               ],
                             },
-                            "displayName": "styled.a",
+                            "displayName": "Header__NavItem",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bxivhb",
+                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
                             "target": "a",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -222,22 +184,70 @@ exports[`Enzyme tests should render Header according to snapshot 1`] = `
                         onMouseEnter={[Function]}
                       >
                         <a
-                          className="sc-bxivhb bTbHln"
+                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
                           onClick={[Function]}
                           onMouseEnter={[Function]}
                         >
                           About
                         </a>
                       </StyledComponent>
-                    </styled.a>
+                    </Header__NavItem>
+                  </Link>
+                </li>
+                <li
+                  data-testid="navlink"
+                >
+                  <Link
+                    href="/blog"
+                  >
+                    <Header__NavItem
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Header__NavItem-sc-1hago8x-3",
+                              "isStatic": true,
+                              "lastClassName": "dHmREQ",
+                              "rules": Array [
+                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
+                              ],
+                            },
+                            "displayName": "Header__NavItem",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
+                            "target": "a",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={[Function]}
+                        onClick={[Function]}
+                        onMouseEnter={[Function]}
+                      >
+                        <a
+                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
+                          onClick={[Function]}
+                          onMouseEnter={[Function]}
+                        >
+                          Blog
+                        </a>
+                      </StyledComponent>
+                    </Header__NavItem>
                   </Link>
                 </li>
               </ul>
             </StyledComponent>
-          </styled.ul>
+          </Header__NavList>
         </nav>
       </header>
     </StyledComponent>
-  </styled.header>
+  </Header__Wrapper>
 </Header>
 `;

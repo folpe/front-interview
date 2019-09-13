@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Enzyme tests should render About according to snapshot 1`] = `
-<About>
+exports[`Enzyme tests should render Blog according to snapshot 1`] = `
+<Blog>
   <Layout>
     <layoutstyled__StyledContainer>
       <StyledComponent
@@ -311,70 +311,7 @@ exports[`Enzyme tests should render About according to snapshot 1`] = `
                     </StyledComponent>
                   </Header__Wrapper>
                 </Header>
-                <h1
-                  data-testid="page-title"
-                >
-                  About
-                </h1>
-                <p
-                  data-testid="text"
-                >
-                  This boilerplate uses Nextjs, React v16.8 and Styled components
-                </p>
-                <about__ImageWrapper>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "about__ImageWrapper-b7daba-0",
-                          "isStatic": true,
-                          "lastClassName": "bBGdsF",
-                          "rules": Array [
-                            "align-items:center;display:flex;flex-wrap:wrap;justify-content:center;div{max-width:450px;}img{padding:0 5px;height:150px;}",
-                          ],
-                        },
-                        "displayName": "about__ImageWrapper",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "about__ImageWrapper-b7daba-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className="about__ImageWrapper-b7daba-0 bBGdsF"
-                    >
-                      <div>
-                        <img
-                          alt="js"
-                          data-testid="img"
-                          src="/static/jslogo.png"
-                        />
-                        <img
-                          alt="js"
-                          data-testid="img"
-                          src="/static/react.png"
-                        />
-                        <img
-                          alt="js"
-                          data-testid="img"
-                          src="/static/nextjs.png"
-                        />
-                        <img
-                          alt="js"
-                          data-testid="img"
-                          src="/static/styled.png"
-                        />
-                      </div>
-                    </div>
-                  </StyledComponent>
-                </about__ImageWrapper>
+                Blog page
               </div>
             </StyledComponent>
           </layoutstyled__StyledContent>
@@ -421,5 +358,5 @@ exports[`Enzyme tests should render About according to snapshot 1`] = `
       </StyledComponent>
     </layoutstyled__StyledContainer>
   </Layout>
-</About>
+</Blog>
 `;

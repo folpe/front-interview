@@ -3,32 +3,24 @@
 exports[`Enzyme tests should render Index according to snapshot 1`] = `
 <Index>
   <Layout>
-    <styled.div>
+    <layoutstyled__StyledContainer>
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-EHOje",
+              "componentId": "layoutstyled__StyledContainer-sc-1k1otu5-0",
               "isStatic": true,
-              "lastClassName": "iZsWwO",
+              "lastClassName": "iVCOlw",
               "rules": Array [
-                "
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-",
+                "margin:0 auto;max-width:750px;padding:1rem;display:flex;flex-direction:column;min-height:100vh;",
               ],
             },
-            "displayName": "styled.div",
+            "displayName": "layoutstyled__StyledContainer",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-EHOje",
+            "styledComponentId": "layoutstyled__StyledContainer-sc-1k1otu5-0",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -38,29 +30,27 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
         forwardedRef={null}
       >
         <div
-          className="sc-EHOje iZsWwO"
+          className="layoutstyled__StyledContainer-sc-1k1otu5-0 iVCOlw"
         >
           <GlobalStyleComponent />
-          <styled.div>
+          <layoutstyled__StyledContent>
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-bZQynM",
+                    "componentId": "layoutstyled__StyledContent-sc-1k1otu5-1",
                     "isStatic": true,
-                    "lastClassName": "cbzSqq",
+                    "lastClassName": "jTWviK",
                     "rules": Array [
-                      "
-  flex-grow: 1;
-",
+                      "flex-grow:1;",
                     ],
                   },
-                  "displayName": "styled.div",
+                  "displayName": "layoutstyled__StyledContent",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-bZQynM",
+                  "styledComponentId": "layoutstyled__StyledContent-sc-1k1otu5-1",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -70,29 +60,27 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
               forwardedRef={null}
             >
               <div
-                className="sc-bZQynM cbzSqq"
+                className="layoutstyled__StyledContent-sc-1k1otu5-1 jTWviK"
               >
                 <Header>
-                  <styled.header>
+                  <Header__Wrapper>
                     <StyledComponent
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
+                            "componentId": "Header__Wrapper-sc-1hago8x-0",
                             "isStatic": true,
-                            "lastClassName": "caoQqG",
+                            "lastClassName": "cBQqfg",
                             "rules": Array [
-                              "
-  padding: 1rem 0 3rem;
-",
+                              "padding:1rem 0 3rem;",
                             ],
                           },
-                          "displayName": "styled.header",
+                          "displayName": "Header__Wrapper",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
+                          "styledComponentId": "Header__Wrapper-sc-1hago8x-0",
                           "target": "header",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -102,9 +90,9 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <header
-                        className="sc-bwzfXH caoQqG"
+                        className="Header__Wrapper-sc-1hago8x-0 cBQqfg"
                       >
-                        <styled.h1
+                        <Header__Title
                           data-testid="title"
                         >
                           <StyledComponent
@@ -114,21 +102,17 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-htpNat",
+                                  "componentId": "Header__Title-sc-1hago8x-1",
                                   "isStatic": true,
-                                  "lastClassName": "jykXUj",
+                                  "lastClassName": "flkuHf",
                                   "rules": Array [
-                                    "
-  color: #000000;
-  font-size: 3rem;
-  text-decoration: none; 
-",
+                                    "color:#000000;font-size:3rem;text-decoration:none;",
                                   ],
                                 },
-                                "displayName": "styled.h1",
+                                "displayName": "Header__Title",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-htpNat",
+                                "styledComponentId": "Header__Title-sc-1hago8x-1",
                                 "target": "h1",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -138,36 +122,32 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <h1
-                              className="sc-htpNat jykXUj"
+                              className="Header__Title-sc-1hago8x-1 flkuHf"
                               data-testid="title"
                             >
                               Coding test with Nextjs
                             </h1>
                           </StyledComponent>
-                        </styled.h1>
+                        </Header__Title>
                         <nav>
-                          <styled.ul>
+                          <Header__NavList>
                             <StyledComponent
                               forwardedComponent={
                                 Object {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bxivhb",
+                                    "componentId": "Header__NavList-sc-1hago8x-2",
                                     "isStatic": true,
-                                    "lastClassName": "caedgk",
+                                    "lastClassName": "esosuA",
                                     "rules": Array [
-                                      "
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-",
+                                      "display:flex;list-style-type:none;margin:0;",
                                     ],
                                   },
-                                  "displayName": "styled.ul",
+                                  "displayName": "Header__NavList",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-bxivhb",
+                                  "styledComponentId": "Header__NavList-sc-1hago8x-2",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -177,16 +157,15 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                               forwardedRef={null}
                             >
                               <ul
-                                className="sc-bxivhb caedgk"
+                                className="Header__NavList-sc-1hago8x-2 esosuA"
                               >
                                 <li
                                   data-testid="navlink"
                                 >
                                   <Link
                                     href="/"
-                                    prefetch={true}
                                   >
-                                    <styled.a
+                                    <Header__NavItem
                                       onClick={[Function]}
                                       onMouseEnter={[Function]}
                                     >
@@ -196,30 +175,17 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-ifAKCX",
+                                              "componentId": "Header__NavItem-sc-1hago8x-3",
                                               "isStatic": true,
-                                              "lastClassName": "dVnSmp",
+                                              "lastClassName": "dHmREQ",
                                               "rules": Array [
-                                                "
-  color: #999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: #666;
-  }
-  &:active {
-    color: #333;
-  }
-",
+                                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
                                               ],
                                             },
-                                            "displayName": "styled.a",
+                                            "displayName": "Header__NavItem",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-ifAKCX",
+                                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
                                             "target": "a",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -231,14 +197,14 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                         onMouseEnter={[Function]}
                                       >
                                         <a
-                                          className="sc-ifAKCX dVnSmp"
+                                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >
                                           Home
                                         </a>
                                       </StyledComponent>
-                                    </styled.a>
+                                    </Header__NavItem>
                                   </Link>
                                 </li>
                                 <li
@@ -246,9 +212,8 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                 >
                                   <Link
                                     href="/about"
-                                    prefetch={true}
                                   >
-                                    <styled.a
+                                    <Header__NavItem
                                       onClick={[Function]}
                                       onMouseEnter={[Function]}
                                     >
@@ -258,30 +223,17 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-ifAKCX",
+                                              "componentId": "Header__NavItem-sc-1hago8x-3",
                                               "isStatic": true,
-                                              "lastClassName": "dVnSmp",
+                                              "lastClassName": "dHmREQ",
                                               "rules": Array [
-                                                "
-  color: #999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: #666;
-  }
-  &:active {
-    color: #333;
-  }
-",
+                                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
                                               ],
                                             },
-                                            "displayName": "styled.a",
+                                            "displayName": "Header__NavItem",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-ifAKCX",
+                                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
                                             "target": "a",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -293,23 +245,71 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                                         onMouseEnter={[Function]}
                                       >
                                         <a
-                                          className="sc-ifAKCX dVnSmp"
+                                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
                                           onClick={[Function]}
                                           onMouseEnter={[Function]}
                                         >
                                           About
                                         </a>
                                       </StyledComponent>
-                                    </styled.a>
+                                    </Header__NavItem>
+                                  </Link>
+                                </li>
+                                <li
+                                  data-testid="navlink"
+                                >
+                                  <Link
+                                    href="/blog"
+                                  >
+                                    <Header__NavItem
+                                      onClick={[Function]}
+                                      onMouseEnter={[Function]}
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "Header__NavItem-sc-1hago8x-3",
+                                              "isStatic": true,
+                                              "lastClassName": "dHmREQ",
+                                              "rules": Array [
+                                                "color:#999;font-size:.9rem;margin-right:1.3rem;text-decoration:none;cursor:pointer;&:hover{color:#666;}&:active{color:#333;}",
+                                              ],
+                                            },
+                                            "displayName": "Header__NavItem",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "Header__NavItem-sc-1hago8x-3",
+                                            "target": "a",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={[Function]}
+                                        onClick={[Function]}
+                                        onMouseEnter={[Function]}
+                                      >
+                                        <a
+                                          className="Header__NavItem-sc-1hago8x-3 dHmREQ"
+                                          onClick={[Function]}
+                                          onMouseEnter={[Function]}
+                                        >
+                                          Blog
+                                        </a>
+                                      </StyledComponent>
+                                    </Header__NavItem>
                                   </Link>
                                 </li>
                               </ul>
                             </StyledComponent>
-                          </styled.ul>
+                          </Header__NavList>
                         </nav>
                       </header>
                     </StyledComponent>
-                  </styled.header>
+                  </Header__Wrapper>
                 </Header>
                 <h1
                   data-testid="page-title"
@@ -326,51 +326,61 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                     Create a new page that you will call "Blog"
                   </li>
                   <li>
-                    Fetch all the blog posts from the following API: https://servertest-bgoupilleau.herokuapp.com
+                    Fetch all the blog posts from the following API: https://upply-interview.herokuapp.com/
                   </li>
                   <li>
                     Display all blog posts in the blog page (title, text, image and date when they are available). The posts will have to be sorted by date
+                  </li>
+                  <li>
+                    I'll we a plus if articles are SEO friendly (render by the server side)
+                  </li>
+                  <li>
+                    Implement a search bar to filter the articles by their names
+                  </li>
+                  <li>
+                    Implement a select to choose the sorting by desc or asc
                   </li>
                   <li>
                     Add whatever you think should be added. But don't forget to tell us what and why
                   </li>
                 </ul>
                 <p>
+                  Feel free to add some styling.
+                </p>
+                <p>
                   Note that the image of each blog is served by the API. The key "src" of each post indicates the endpoint on the API
                 </p>
                 <p>
-                  Example: "src: 'mypicture.png' means that the picture source is https://servertest-bgoupilleau.herokuapp.com/mypicture.png
+                  Example: "src: 'mypicture.png' means that the picture source is https://upply-interview.herokuapp.com/images/mypicture.png
                 </p>
                 <p>
-                  Once you are done. Please send us back a zip of your repository
+                  Once you are done. Please send us back the url of your repository
                 </p>
                 <p>
                   See you soon!
                 </p>
               </div>
             </StyledComponent>
-          </styled.div>
+          </layoutstyled__StyledContent>
           <Footer>
-            <styled.footer>
+            <Footer__Wrapper>
               <StyledComponent
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
+                      "componentId": "Footer__Wrapper-sc-1so89p3-0",
                       "isStatic": true,
-                      "lastClassName": "yyWgM",
+                      "lastClassName": "giKWMg",
                       "rules": Array [
-                        "
-  margin-top: 3rem;
-",
+                        "margin-top:3rem;",
                       ],
                     },
-                    "displayName": "styled.footer",
+                    "displayName": "Footer__Wrapper",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
+                    "styledComponentId": "Footer__Wrapper-sc-1so89p3-0",
                     "target": "footer",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -380,7 +390,7 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                 forwardedRef={null}
               >
                 <footer
-                  className="sc-bdVaJa yyWgM"
+                  className="Footer__Wrapper-sc-1so89p3-0 giKWMg"
                 >
                   <p
                     data-testid="copyright"
@@ -389,11 +399,11 @@ exports[`Enzyme tests should render Index according to snapshot 1`] = `
                   </p>
                 </footer>
               </StyledComponent>
-            </styled.footer>
+            </Footer__Wrapper>
           </Footer>
         </div>
       </StyledComponent>
-    </styled.div>
+    </layoutstyled__StyledContainer>
   </Layout>
 </Index>
 `;
