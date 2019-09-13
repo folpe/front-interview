@@ -47,7 +47,6 @@ const useStyles = makeStyles(theme => ({
 
 const Blog = () => {
   const classes = useStyles()
-  const dispatch = useDispatch()
 
   const [blogPosts, setBlogPosts] = useState([])
   useEffect(() => {
@@ -60,7 +59,18 @@ const Blog = () => {
 
   console.log(blogPosts)
 
-  const blogPostsList = blogPosts.map(post => <Card>{post.title}</Card>)
+  const blogPostsList = blogPosts.map(post => (
+    <Card key={post.id}>
+      <div>
+        {post.src && (
+          <img
+            src={`https://upply-interview.herokuapp.com/images/${post.src}`}
+          />
+        )}
+      </div>
+      {post.title}
+    </Card>
+  ))
 
   return (
     <Layout>
