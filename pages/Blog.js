@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import { makeStyles } from '@material-ui/core/styles'
 import SearchIcon from '@material-ui/icons/Search'
-import { useDispatch } from 'react-redux'
-import { fetchBlogPosts } from '../reducers/blogPosts'
 import axios from 'axios'
 
 import InputBase from '@material-ui/core/InputBase'
 import { Card } from '@material-ui/core'
+import moment from 'moment'
 
 const useStyles = makeStyles(theme => ({
   search: {
@@ -43,6 +42,10 @@ const useStyles = makeStyles(theme => ({
       },
     },
   },
+  post: {
+    marginTop: 12,
+    padding: 12,
+  },
 }))
 
 const Blog = () => {
@@ -60,7 +63,9 @@ const Blog = () => {
   console.log(blogPosts)
 
   const blogPostsList = blogPosts.map(post => (
-    <Card key={post.id}>
+    <Card key={post.id} className={classes.post}>
+      <div>{post.title}</div>
+      {post.date && <div>{post.date}</div>}
       <div>
         {post.src && (
           <img
@@ -68,7 +73,7 @@ const Blog = () => {
           />
         )}
       </div>
-      {post.title}
+      <div>{post.text}</div>
     </Card>
   ))
 

@@ -1,8 +1,6 @@
 import App, { Container } from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { Provider } from 'react-redux'
-import store from '../shared/store'
 
 const theme = {
   colors: {
@@ -16,9 +14,7 @@ export default class MyApp extends App {
     return (
       <Container>
         <ThemeProvider theme={theme}>
-          <Provider store={store}>
-            <Component {...pageProps} />
-          </Provider>
+          <Component {...pageProps} />
         </ThemeProvider>
       </Container>
     )
