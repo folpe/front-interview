@@ -52,6 +52,8 @@ const Blog = () => {
   const classes = useStyles()
 
   const [blogPosts, setBlogPosts] = useState([])
+  const [searchValue, setSearchValue] = useState('')
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(`https://upply-interview.herokuapp.com/`)
@@ -60,22 +62,27 @@ const Blog = () => {
     fetchData()
   }, [])
 
-  console.log(blogPosts)
+  const handleChange = event => {
+    const { value } = event.target
+    setSearchValue(value)
+  }
 
-  const blogPostsList = blogPosts.map(post => (
-    <Card key={post.id} className={classes.post}>
-      <div>{post.title}</div>
-      {post.date && <div>{post.date}</div>}
-      <div>
-        {post.src && (
-          <img
-            src={`https://upply-interview.herokuapp.com/images/${post.src}`}
-          />
-        )}
-      </div>
-      <div>{post.text}</div>
-    </Card>
-  ))
+  const blogPostsList = blogPosts
+    .filter(post => post.text.includes(searchValue))
+    .map(post => (
+      <Card key={post.id} className={classes.post}>
+        <div>{post.title}</div>
+        {post.date && <div>{post.date}</div>}
+        <div>
+          {post.src && (
+            <img
+              src={`https://upply-interview.herokuapp.com/images/${post.src}`}
+            />
+          )}
+        </div>
+        <div>{post.text}</div>
+      </Card>
+    ))
 
   return (
     <Layout>
@@ -90,6 +97,7 @@ const Blog = () => {
             input: classes.inputInput,
           }}
           inputProps={{ 'aria-label': 'search' }}
+          onChange={handleChange}
         />
       </div>
       {blogPostsList}
