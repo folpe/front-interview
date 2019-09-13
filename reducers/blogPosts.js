@@ -4,10 +4,10 @@ import 'regenerator-runtime/runtime'
 
 // Types d’actions
 // ---------------
-const FETCH_BLOGPOSTS = 'freeup/clients/FETCH_BLOGPOSTS'
-const FETCH_BLOGPOSTS_SUCCEED = 'freeup/clients/FETCH_BLOGPOSTS_SUCCEED'
-const FETCH_BLOGPOSTS_START = 'freeup/clients/FETCH_BLOGPOSTS_START'
-const FETCH_BLOGPOSTS_FAIL = 'freeup/clients/FETCH_BLOGPOSTS_FAIL'
+const FETCH_BLOGPOSTS = 'freeup/BlogPosts/FETCH_BLOGPOSTS'
+const FETCH_BLOGPOSTS_SUCCEED = 'freeup/BlogPosts/FETCH_BLOGPOSTS_SUCCEED'
+const FETCH_BLOGPOSTS_START = 'freeup/BlogPosts/FETCH_BLOGPOSTS_START'
+const FETCH_BLOGPOSTS_FAIL = 'freeup/BlogPosts/FETCH_BLOGPOSTS_FAIL'
 
 // Réducteur
 // ---------
@@ -16,7 +16,7 @@ const BLOGPOSTS_DEFAULT = {
   loading: false,
   error: '',
 }
-export default function reduceBogPosts(state = CLIENTS_DEFAULT, action) {
+export default function reduceBlogPosts(state = BLOGPOSTS_DEFAULT, action) {
   switch (action.type) {
     case FETCH_BLOGPOSTS_START: {
       return {
@@ -48,15 +48,15 @@ export default function reduceBogPosts(state = CLIENTS_DEFAULT, action) {
 // Action Creators
 // ---------------
 export function fetchBlogPostsStart() {
-  return { type: FETCH_CLIENTS_START }
+  return { type: FETCH_BLOGPOSTS_START }
 }
 
 export function fetchBlogPostsSuccess(blogPosts) {
-  return { type: FETCH_CLIENTS_SUCCEED, payload: { blogPosts } }
+  return { type: FETCH_BLOGPOSTS_SUCCEED, payload: { blogPosts } }
 }
 
 export function fetchBlogPostsError(error) {
-  return { type: FETCH_CLIENTS_FAIL, payload: { error } }
+  return { type: FETCH_BLOGPOSTS_FAIL, payload: { error } }
 }
 
 export function fetchBlogPosts() {
@@ -73,8 +73,8 @@ export function* fetchBlogPostsAsync() {
     })
     yield put(fetchBlogPostsSuccess(blogPosts))
   } catch (error) {
-    yield put(fetchClientsError(error))
+    yield put(fetchBlogPostsError(error))
   }
 }
 
-export const clientsSagas = [takeLatest(FETCH_BLOGPOSTS, fetchBlogPostsAsync)]
+export const blogPostsSagas = [takeLatest(FETCH_BLOGPOSTS, fetchBlogPostsAsync)]

@@ -2,8 +2,8 @@ import { combineReducers } from 'redux'
 
 import blogPosts from './blogPosts'
 
-const freeUpReducer = combineReducers({
+const frontInterview = combineReducers({
   blogPosts,
 })
 
-export default freeUpReducer
+export default frontInterview
